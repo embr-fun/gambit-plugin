@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gambit-trading",
+  "version": "0.2.0",
+  "description": "AI research desk for Hyperliquid. Ranks opportunities and writes a thesis with evidence, counterpoint, and invalidation. You confirm every trade.",
+  "author": {
+    "name": "EMBR DEV PTE. LTD.",
+    "url": "https://gambit.trading"
+  },
+  "homepage": "https://gambit.trading/mcp",
+  "repository": "https://github.com/embr-fun/gambit-plugin",
+  "license": "MIT",
+  "keywords": ["hyperliquid", "mcp", "trading-research", "perps", "market-data"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/get-started/SKILL.md",
+      "interface": {
+        "displayName": "Gambit Research Desk",
+        "shortDescription": "Hyperliquid research desk",
+        "longDescription": "Gambit is an AI research desk for Hyperliquid, including HIP-3 builder-DEX markets. It initiates: a ranked opportunity feed, then a thesis card with evidence, a counterpoint, an invalidation, and a size that already respects the user's policy. The user stays the decision-maker.\n\nSign in with your Gambit account when you connect. Read tools return market data, computed features, news, sentiment, the Today's Market opportunity feed, and, with the scopes you grant, balances, positions, brokerage holdings, and recommendations. generate_recommendation and ask_gambit_agent spend quota. propose_trade stages a guardrailed preview and places nothing. confirm_trade executes from the agent wallet only, after the preview is shown to a human. Without the api:trade scope nothing can place trades or move funds.\n\nGambit is operated by EMBR DEV PTE. LTD. in Singapore. It is not an exchange, broker, or custodian. It does not offer unattended trading or guaranteed returns. Formerly Hypergambit.",
+        "developerName": "EMBR DEV PTE. LTD.",
+        "category": "Finance",
+        "capabilities": [
+          "Scan Hyperliquid perp markets, including HIP-3 builder-DEX assets",
+          "Read the ranked Today's Market opportunity feed and full thesis cards",
+          "Pull prices, bars, funding, volatility features, sentiment, and news",
+          "Read your balances, positions, open orders, and brokerage holdings",
+          "Generate and respond to trade recommendations from your Gambit agent",
+          "Stage a trade preview, then execute only after you confirm it"
+        ],
+        "websiteURL": "https://gambit.trading",
+        "supportURL": "https://gambit.trading/learn/faq",
+        "privacyPolicyURL": "https://gambit.trading/privacy",
+        "termsOfServiceURL": "https://gambit.trading/terms",
+        "defaultPrompt": [
+          "Show today's top Hyperliquid opportunities on Gambit.",
+          "What is BTC's funding and 1-day realized vol right now?",
+          "Summarize my Hyperliquid positions and what changed today."
+        ],
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      },
+      "publication": {
+        "release_notes": "Initial public listing. Streamable HTTP MCP at api.gambit.trading/mcp with OAuth sign-in. Read tools for Hyperliquid research; propose then confirm for trading."
+      }
+    }
+  }
+}
