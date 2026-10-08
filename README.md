@@ -2,11 +2,7 @@
 
 Gambit is an AI research desk for [Hyperliquid](https://hyperliquid.xyz), including HIP-3 builder-DEX markets. It ranks opportunities and writes a thesis card with evidence, a counterpoint, an invalidation, and a size. You confirm every trade.
 
-This repo packages the Gambit MCP server for agent clients:
-
-- **Cursor**: install from the Cursor Marketplace.
-- **ChatGPT and Codex**: install from the OpenAI plugin directory.
-- **Any other MCP client**: connect directly (see below).
+This repo packages the Gambit MCP server as a plugin for Cursor, ChatGPT and Codex. Until those listings go live, connect directly (see below); it works in any MCP client.
 
 It contains no server code. The server is hosted at `https://api.gambit.trading/mcp`.
 
