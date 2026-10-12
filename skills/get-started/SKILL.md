@@ -9,7 +9,7 @@ Gambit is an AI research desk for Hyperliquid. It ranks opportunities and writes
 
 ## 1. Connect
 
-The `gambit` MCP server is at `https://api.gambit.trading/mcp`. The first tool call opens a Gambit sign-in page where the user picks which scopes to grant. If the user has no account, send them to https://gambit.trading first.
+The `gambit` MCP server is at `https://api.gambit.trading/mcp`. The first tool call opens a Gambit sign-in page where the user picks which scopes to grant. If the user has no account, send them to https://www.gambit.trading first.
 
 Never ask the user to paste a credential into the chat.
 
