@@ -46,11 +46,11 @@ Gambit is not an exchange, broker, or custodian, and it does not run unattended 
 
 ## Links
 
-- Docs: https://gambit.trading/mcp
-- Machine-readable docs: https://gambit.trading/llms.txt
-- FAQ: https://gambit.trading/learn/faq
-- Privacy: https://gambit.trading/privacy
-- Terms: https://gambit.trading/terms
+- Docs: https://www.gambit.trading/mcp
+- Machine-readable docs: https://www.gambit.trading/llms.txt
+- FAQ: https://www.gambit.trading/learn/faq
+- Privacy: https://www.gambit.trading/privacy
+- Terms: https://www.gambit.trading/terms
 
 ## Releasing
 
